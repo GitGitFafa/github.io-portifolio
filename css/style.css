@@ -1,0 +1,177 @@
+/* ########CONFIGURAÇÕES DE ROOT################### */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* ############CONFIGURAÇÕES DA PÁGINA HTML################ */
+
+html{
+    display:block;
+    max-width: 100%;
+}
+
+/* ############CONFIGURAÇÕES DO BODY PARA TODO O TEMPLATE################# */
+
+body{
+    background: beige;
+    color: #525252;
+    margin: .5rem;
+    margin-top: 6.25rem;
+    margin-bottom: 6.25rem;
+}
+
+/* ###########ÁREA DE LINKS DO HEADER############ */
+
+a{
+    color: #B5446E
+}
+
+a:hover{
+    color: #E06D06;
+}
+
+.link-menu{
+    display: inline-block; 
+    margin: .625rem;
+    align-content: space-between;
+    grid-area: "grid-cabecalho";
+}
+
+/* #########CONFIGURAÇÕES DA ÁREA MAIN############# */
+
+main{
+    margin: auto;
+    display: grid;
+    gap: 6px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: repeat(5,auto);
+    grid-template-areas: 
+    "grid-cabecalho"
+    "grid-foto"
+    "grid-info"
+    "grid-contatos"
+    "grid-rodape";
+    flex-direction: column;
+    max-height: 100vh;
+}
+
+/* ############CONFIGURAÇÕES DA FOTO################# */
+
+.foto-conteiner{
+    width: 15.625rem;
+    grid-area: "grid-foto";
+    margin-top: 20px;
+}
+
+.minha-foto{
+    max-width: 100%;
+    border-radius: 50%;
+    border: .3125rem solid ;
+}
+
+/* ############CONFIGURAÇÕES NOME E FUNÇÃO###################### */
+
+.info-perfil{
+    grid-area:"grid-info";
+    
+}
+
+h1{
+    display: block;
+    font-size: 2em;
+    /* margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; */
+    font-weight: bold;
+}
+
+.info-perfil p{
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    /* font-weight: bold; */
+}
+
+/* ##############CONFIGURAÇÃO DOS ÍCONES DAS MÍDIAS##################### */
+
+.contatos-conteiner{
+    display: flex;
+    gap: 10px;
+    grid-area: "grid-contatos"; 
+}
+.contatos-lista{
+    display: flex;
+}
+
+ul li{
+    list-style: none;  
+}
+
+
+.contatos{
+    flex-wrap: wrap;   
+}
+
+.fotos-midias{
+    width: 2.5rem;
+    margin: 5px;
+}
+
+/* #############CONFIGURAÇÃO DO RODAPÉ############## */
+.rodape-conteiner{
+    display: grid;
+    justify-content: center;
+    align-items:center;
+    grid-area: "grid-rodape";
+    flex-direction: column;
+}
+
+.rodape{
+    display: flex; 
+}
+
+span{
+    color: #B5446E;
+}
+
+/* #############CONFIGURAÇÃO DE LGPD NO SITE################ */
+
+/* .lgpd{
+display: inline-block;
+margin: 15px;
+}
+
+#aceitar-cookies{
+    display: inline-block;
+    background: #BCB8B1;
+    padding: 5px;
+    border-radius: 3px;
+    
+}
+
+#rejeitar-cookies{
+    display: inline-block;
+    background: #BCB8B1;
+    padding: 5px;
+    border-radius: 3px;
+} */
+
+/* ###########MODO RESPONSIVO##################### */
+
+@media (max-width: 600px){
+    .link-menu{
+        display: none;
+    }
+}
